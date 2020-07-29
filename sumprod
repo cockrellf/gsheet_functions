@@ -1,0 +1,2 @@
+//Geting a result based on 2 criteria.  Sums points in clumn J when G starts with '[F-D' and L = the first 6 characters of E
+=SUMPRODUCT('CSS PI2 (5750232)'!$J:$J, --(LEFT('CSS PI2 (5750232)'!$G:$G,4)="[F-D"), --('CSS PI2 (5750232)'!$L:$L=SUBSTITUTE(left(E2,6)," ","")))
